@@ -2,7 +2,7 @@ import React, { useState,useContext } from 'react';
 import { TicketsContext } from '../../../context/TicketsContext';
 import TickeDateTurn from './TickeDateTurn/TickeDateTurn';
 import TicketCounter from './TicketCounter/TicketCounter';
-import './CoasterDetailContainer.css'
+
 
 function GetTicketHandler({selectedCoaster}) {
   
@@ -30,6 +30,7 @@ function GetTicketHandler({selectedCoaster}) {
 
   return (
     <React.Fragment>
+      <h3>Get your ticket!</h3>
       <TickeDateTurn handleDate={handleDate} handleTurn={handleTurn}/>
       <TicketCounter selectedCoaster={selectedCoaster} onAdd={handleCount} date={date} turn={turn} initialQuantity={quantity} />
     </React.Fragment>

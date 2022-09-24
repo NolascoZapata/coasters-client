@@ -1,0 +1,15 @@
+.about{
+  background-image: url("https://images.pexels.com/photos/66143/pexels-photo-66143.jpeg");
+  background-size: auto;
+  background-position-x: center;
+  height: auto;
+
+}
+.about p {
+  top: 10%;
+  width: 27%;
+  left: 60%;
+  color: #f8efd9;
+  font-size: 25px;
+  
+}

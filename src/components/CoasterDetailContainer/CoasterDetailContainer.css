@@ -1,0 +1,31 @@
+.card-detail{
+  display: flex;
+  
+}
+
+.card-detail img{
+  width: 50%;
+}
+.card-detail img, .card-detail .details{
+  margin: 1%;
+}
+
+.card-detail .details{
+  display: flex;
+  justify-content:  center;
+  flex-direction: column;
+
+}
+.card-detail .details table{
+  border-spacing: 27px 5px;
+
+}
+
+
+
+@media screen and (max-width:578px){
+  .card-detail img{
+    width: 35%;
+    
+  }
+}

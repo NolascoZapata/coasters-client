@@ -12,7 +12,7 @@ function TicketsCartContainer() {
       
       <div>
         <button onClick={cleanCart}>Clean list</button>
-        <table border="3" cellPadding="10" cellSpacing="0">
+        <table  cellPadding="10" cellSpacing="0">
           <thead>
             <tr>
               <th align="left">Attraction</th>
@@ -26,7 +26,7 @@ function TicketsCartContainer() {
           {cartLenght === 0 ?
           <tbody>
             <tr>
-              <td colSpan="5">Empty Cart</td>
+              <td colSpan="5" style={{"color":"red"}}>Empty Cart</td>
             </tr>
           </tbody>
           

@@ -6,7 +6,6 @@ function CardsContainer({coasters}) {
   return (
 
     <React.Fragment>
-      <h3>Cards Container</h3>
       <div className='cards-container'>
           {coasters.map((coaster) => (
               <Card key={coaster._id}  coaster={coaster}/>

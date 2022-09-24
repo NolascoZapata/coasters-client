@@ -1,6 +1,16 @@
 nav {
   text-align: center;
+  background-color: #2099d8;
+  
 }
 nav a {
   margin: 4%;
+  font-size: 30px;
+  text-decoration: none;
+  color: #f8efd9;
+}
+nav a {
+  margin: 4%;
+  font-size: 30px;
+  text-decoration: none;
 }
