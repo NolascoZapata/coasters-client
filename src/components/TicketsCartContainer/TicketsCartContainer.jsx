@@ -1,16 +1,17 @@
 import React, { useContext } from 'react'
 import { TicketsContext } from '../../context/TicketsContext'
-import CartForm from './CartForm/CartForm'
+import CartForm from './CartForm/CartForm';
+import './TicketsCartContainer.css';
 
 
 function TicketsCartContainer() {
   const {ticketList,removeTickets,total,cleanCart,cartLenght} = useContext(TicketsContext)
 
   return (
-    <React.Fragment>
-      <h2>TicketsCartContainer</h2>
-      
-      <div>
+    <div className='cart-container'>
+      <img src="https://images.pexels.com/photos/3387165/pexels-photo-3387165.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
+      <div className='cart'>
+        <h2>Cart</h2>
         <button onClick={cleanCart}>Clean list</button>
         <table  cellPadding="10" cellSpacing="0">
           <thead>
@@ -55,9 +56,7 @@ function TicketsCartContainer() {
         </table>
         <CartForm/>
       </div>
-
-      
-    </React.Fragment>
+    </div>
   )
 }
 

@@ -46,6 +46,7 @@ function ContactContainer() {
           onChange={handlerChange}
         >
           <input 
+              className='text-input'
               type='text'
               placeholder='Name' 
               name='name'
@@ -53,7 +54,8 @@ function ContactContainer() {
               defaultValue={message.name}
               required
           />
-          <input 
+          <input
+              className='text-input'
               type='email' 
               placeholder='E-mail' 
               name='email'

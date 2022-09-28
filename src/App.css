@@ -11,7 +11,7 @@ body{
   font-family: 'Poppins', sans-serif;
 }
 
-body input, body textarea{
+body .text-input, body textarea{
   background: none;
   color: #f8efd9;
   border: none;

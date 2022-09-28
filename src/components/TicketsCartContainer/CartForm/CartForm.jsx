@@ -48,14 +48,16 @@ function CartForm() {
                 onSubmit={handlerSubmit}
                 onChange={handlerChange}
             >
-                <input 
+                <input
+                    className='text-input'
                     type='text'
                     placeholder='Name' 
                     name='name'
                     defaultValue={buyer.name}
                     required
                 />
-                <input 
+                <input
+                    className='text-input'
                     type='email' 
                     placeholder='E-mail' 
                     name='email'
