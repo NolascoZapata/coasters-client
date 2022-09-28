@@ -1,0 +1,31 @@
+.contact-container {
+  position: relative;
+
+}
+
+.contact-container img {
+  width: 1519px;
+
+}
+
+.contact-container div {
+  top: 10%;
+  width: 40%;
+  left: 5%;
+  color: #f8efd9;
+  font-size: 30px;
+  position: absolute;
+
+}
+
+.contact-container div h2 {
+  margin: 0 0 5% 0;
+}
+
+.contact-container div form {
+  display: flex;
+  flex-direction: column;
+
+}
+
+/*-----------------------*/

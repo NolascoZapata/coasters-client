@@ -10,3 +10,24 @@
 body{
   font-family: 'Poppins', sans-serif;
 }
+
+body input, body textarea{
+  background: none;
+  color: #f8efd9;
+  border: none;
+  border-bottom: 1px solid #f8efd9;
+  font-size: 25px;
+  margin: 3% 0% ;
+}
+::placeholder{
+  color:#f8efd9;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  color: f8efd9;
+}
+
+::-ms-input-placeholder {
+  color: #f8efd9;
+}

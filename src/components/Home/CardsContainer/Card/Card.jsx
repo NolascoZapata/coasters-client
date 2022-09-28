@@ -1,5 +1,5 @@
-import React from 'react'
-import { Link } from 'react-router-dom' ;
+import React from 'react';  
+import ButtonArrow from '../../../ButtonArrow/ButtonArrow';
 import './Card.css'
 
 function Card({coaster}) {
@@ -10,7 +10,7 @@ function Card({coaster}) {
             <div className='card-text'>
               <h4>{coaster.title}</h4>
               <p>Length: {coaster.length} m</p>
-              <button><Link to={`/coasters/${coaster._id}`} >Show details </Link></button>
+              <ButtonArrow content='Show details' link={`/coasters/${coaster._id}`}/>
             </div>
     </div>
 

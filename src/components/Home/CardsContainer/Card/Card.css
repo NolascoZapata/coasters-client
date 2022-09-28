@@ -21,12 +21,12 @@
   flex-direction: column;
   
 }
-.card .card-text h4, .card .card-text p, .card .card-text button {
+.card .card-text h4, .card .card-text p{
   margin: 1% 0 0 3% ;
   
 }
 
-.card .card-text button{
+/* .card .card-text button{
   max-width: 25%;
   background-color: rgb(101, 235, 101);
   border: none; 
@@ -46,4 +46,4 @@
 .card .card-text button a:hover{
   color: rgb(101, 235, 101);
   background-color: white
-}
+} */

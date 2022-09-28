@@ -1,15 +1,19 @@
 .about{
-  background-image: url("https://images.pexels.com/photos/66143/pexels-photo-66143.jpeg");
-  background-size: auto;
-  background-position-x: center;
-  height: auto;
+  position:relative;
 
 }
-.about p {
+.about img{
+  width: 1519px;
+
+}
+.about .title-text {
   top: 10%;
   width: 27%;
   left: 60%;
   color: #f8efd9;
-  font-size: 25px;
-  
+  font-size: 30px;
+  position: absolute;
+}
+.about .title-text h2{
+  margin: 0 0 5% 0 ;
 }

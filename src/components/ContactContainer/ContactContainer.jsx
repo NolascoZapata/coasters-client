@@ -1,4 +1,7 @@
-import React,{useState} from 'react'
+import React,{useState} from 'react';
+import ButtonArrow from '../ButtonArrow/ButtonArrow';
+import './ContactContainer.css';
+
 const initialState ={
   name:'',
   email:'',
@@ -31,25 +34,14 @@ function ContactContainer() {
 
       setMessage(initialState)
       resetInputs()
-
-        
-        // .then(({id})=>{
-        //     swal({
-        //         title:`Consulta enviada!`,
-        //         text:`La identificacion de consulta es : ${id}`,
-        //         icon:"success",
-        //         height: "340px"
-        //     })
-        //     setUser(initialState)
-        // })
-        
     }
 
   return (
-    <React.Fragment>
-        <h2>Contact us!</h2>
-        <img src="https://images.pexels.com/photos/749064/pexels-photo-749064.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
-        <form
+        <div className='contact-container'>
+          <img src="https://images.pexels.com/photos/749064/pexels-photo-749064.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
+          <div>
+            <h2>Contact us!</h2>
+            <form
           onSubmit={handlerSubmit}
           onChange={handlerChange}
         >
@@ -76,9 +68,11 @@ function ContactContainer() {
               defaultValue={message.message}
               required
           />
-          <button>Send Message </button>
-        </form>        
-    </React.Fragment>
+          
+          <ButtonArrow content="Send Message"/>
+          </form> 
+          </div>
+        </div>
   )
 }
 
