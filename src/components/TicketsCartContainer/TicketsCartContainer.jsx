@@ -12,7 +12,7 @@ function TicketsCartContainer() {
       <img src="https://images.pexels.com/photos/3387165/pexels-photo-3387165.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
       <div className='cart'>
         <h2>Cart</h2>
-        <button onClick={cleanCart}>Clean list</button>
+        <button onClick={cleanCart} className='clean-list-btn'>Clean list</button>
         <table  cellPadding="10" cellSpacing="0">
           <thead>
             <tr>
@@ -27,7 +27,7 @@ function TicketsCartContainer() {
           {cartLenght === 0 ?
           <tbody>
             <tr>
-              <td colSpan="5" style={{"color":"red"}}>Empty Cart</td>
+              <td colSpan="5" style={{"color":"red"}} >Empty Cart</td>
             </tr>
           </tbody>
           
@@ -49,7 +49,7 @@ function TicketsCartContainer() {
           }
           <tfoot>
             <tr key="totalCart">
-              <td  colSpan="4">Total Price</td>
+              <td align='right' colSpan="4">Total Price</td>
               <td align="center">${total()}</td>
             </tr>
           </tfoot>

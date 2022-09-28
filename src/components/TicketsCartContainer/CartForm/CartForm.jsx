@@ -1,4 +1,5 @@
 import React, {useContext, useState} from 'react';
+
 import { TicketsContext } from './../../../context/TicketsContext';
 
 
@@ -44,7 +45,7 @@ function CartForm() {
   return (
     <>
     <h3>Enter your data</h3>
-    <form className='formulario-comprador'
+    <form 
                 onSubmit={handlerSubmit}
                 onChange={handlerChange}
             >
@@ -64,7 +65,7 @@ function CartForm() {
                     defaultValue={buyer.email}
                     required
                 />
-                <button>Buy now!</button>
+                <button className='btn'>Buy now!</button>
                 
                 
             </form>

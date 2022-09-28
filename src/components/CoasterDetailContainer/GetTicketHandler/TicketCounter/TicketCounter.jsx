@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-
 import ButtonArrow from '../../../ButtonArrow/ButtonArrow';
+import './TicketCounter.css'
 
 function TicketCounter(props) {
 
@@ -37,7 +37,7 @@ function TicketCounter(props) {
   }
 
   return (
-    <div>
+    <div className='ticket-couter'>
       
 
 
@@ -45,12 +45,12 @@ function TicketCounter(props) {
       onAddTo?
       <React.Fragment>
         <p>Tickets: </p>
-        <button onClick={downQty}>-</button>
+        <button onClick={downQty} className='btn'>-</button>
         <label>{quantity}</label>
-        <button onClick={upQty}>+</button>
+        <button onClick={upQty} className='btn'>+</button>
         <p>Subtotal : ${quantity*selectedCoaster.price}</p>
 
-        <button type="button"  onClick={()=> { checkDate(date,turn)}}>
+        <button type="button" className='btn' onClick={()=> { checkDate(date,turn)}}>
               Get Tickets 
         </button>
 

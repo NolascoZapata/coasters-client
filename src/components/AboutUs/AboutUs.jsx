@@ -16,7 +16,6 @@ function AboutUs() {
         </div>
         
       </div>
-      
     </React.Fragment>
     
   )

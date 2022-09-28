@@ -31,3 +31,21 @@ body .text-input, body textarea{
 ::-ms-input-placeholder {
   color: #f8efd9;
 }
+
+.btn {
+  cursor: pointer;
+  font-weight: 700;
+  transition: all .2s;
+  padding: 10px 20px;
+  border-radius: 100px;
+  border: 1px solid transparent;
+  font-size: 20px;
+  width: fit-content;
+  margin: 10px;
+  background-color: #2099d8;
+  color: #f8efd9;
+}
+
+.btn:active {
+  transform: scale(0.95);
+}
