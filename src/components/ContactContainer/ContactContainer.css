@@ -1,28 +1,23 @@
 .contact-container {
-  position: relative;
-
+  background-image: url(https://images.pexels.com/photos/749064/pexels-photo-749064.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
-.contact-container img {
-  width: 1519px;
-
-}
-
-.contact-container div {
-  top: 10%;
-  width: 40%;
-  left: 5%;
+.contact-container h2, .contact-container form {
   color: #f8efd9;
   font-size: 30px;
-  position: absolute;
-
+  width: 40%;
+  margin: 3% 0 0 5%;
 }
 
-.contact-container div h2 {
-  margin: 0 0 5% 0;
-}
 
-.contact-container div form {
+.contact-container form {
   display: flex;
   flex-direction: column;
 

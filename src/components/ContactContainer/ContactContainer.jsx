@@ -38,8 +38,6 @@ function ContactContainer() {
 
   return (
         <div className='contact-container'>
-          <img src="https://images.pexels.com/photos/749064/pexels-photo-749064.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
-          <div>
             <h2>Contact us!</h2>
             <form
           onSubmit={handlerSubmit}
@@ -72,8 +70,7 @@ function ContactContainer() {
           />
           
           <ButtonArrow content="Send Message"/>
-          </form> 
-          </div>
+            </form> 
         </div>
   )
 }

@@ -9,6 +9,7 @@
 
 body{
   font-family: 'Poppins', sans-serif;
+  font-size: 30px;
 }
 
 body .text-input, body textarea{
@@ -16,9 +17,11 @@ body .text-input, body textarea{
   color: #f8efd9;
   border: none;
   border-bottom: 1px solid #f8efd9;
-  font-size: 25px;
+  font-size: 60%;
   margin: 3% 0% ;
 }
+
+
 ::placeholder{
   color:#f8efd9;
   opacity: 1;
@@ -39,7 +42,7 @@ body .text-input, body textarea{
   padding: 10px 20px;
   border-radius: 100px;
   border: 1px solid transparent;
-  font-size: 20px;
+  font-size: 40%;
   width: fit-content;
   margin: 10px;
   background-color: #2099d8;

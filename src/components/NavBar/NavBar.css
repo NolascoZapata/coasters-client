@@ -1,16 +1,20 @@
 nav {
-  text-align: center;
+  display: flex;
+  justify-content: space-around;
   background-color: #2099d8;
   
 }
 nav a {
-  margin: 4%;
-  font-size: 30px;
+  padding: 1% 4%;
+  font-size: 80%;
   text-decoration: none;
   color: #f8efd9;
+  display: inline-block;
 }
-nav a {
-  margin: 4%;
-  font-size: 30px;
-  text-decoration: none;
+@media screen and (max-width: 576px) {
+  nav a {
+    font-size: 50%;
+    padding: 1% 3%;
+  }
+
 }
