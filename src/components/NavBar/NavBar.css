@@ -1,14 +1,15 @@
 nav {
   display: flex;
   justify-content: space-around;
-  background-color: #2099d8;
+  background-color: #2927277d;
   
 }
 nav a {
   padding: 1% 4%;
   font-size: 80%;
+  font-weight: 600;
   text-decoration: none;
-  color: #f8efd9;
+  color: #F0F7F4;
   display: inline-block;
 }
 @media screen and (max-width: 576px) {
@@ -16,5 +17,4 @@ nav a {
     font-size: 50%;
     padding: 1% 3%;
   }
-
 }

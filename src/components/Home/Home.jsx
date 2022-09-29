@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import { useState } from 'react'
+import NavBar from '../NavBar/NavBar'
 import Spinner from '../Spinner/Spinner'
 import CardsContainer from './CardsContainer/CardsContainer'
 
@@ -25,6 +26,7 @@ useEffect(() => {
 
   return (
     <React.Fragment>
+      <NavBar/> 
       {loading && <Spinner/> }
       {
         !loading && 

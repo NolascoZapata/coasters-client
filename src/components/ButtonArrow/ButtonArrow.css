@@ -4,7 +4,7 @@
   transition: all .2s;
   padding: 10px 20px;
   border-radius: 100px;
-  background: #2099d8;
+  background: #2927277d;
   border: 1px solid transparent;
   display: flex;
   align-items: center;
@@ -13,9 +13,8 @@
   margin: 10px;
 
 }
-
-.arrow-btn:hover {
-  background: #2099d8;
+.arrow-btn:hover{
+  background: #292727e6;
 }
 
 .arrow-btn svg {
@@ -40,4 +39,18 @@
 }
 .arrow-btn span {
   color: #f8efd9;
+}
+
+/* Media queries */
+@media screen and (max-width: 768px) {
+  .arrow-btn {
+    padding: 8px 15px;
+    font-size: 19px;
+  } 
+}
+@media screen and (max-width: 576px) {
+  .arrow-btn {
+    padding: 4px 7px;
+    font-size: 14px;
+  }
 }

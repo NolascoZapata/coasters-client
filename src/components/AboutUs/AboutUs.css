@@ -1,15 +1,15 @@
-.about{
+.about-container{
   background-image: url(https://images.pexels.com/photos/66143/pexels-photo-66143.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   height: 100vh;
+}
+.about-container .about{
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  
 }
-
 .about h2 {
   color: #f8efd9;
   width: 40%;
@@ -41,21 +41,12 @@
 }
 @media screen and (max-width: 576px) {
   .about{
-    display: block;
-    background: none;
+    align-items: center;
   }
-  .about .img-xs{
-    background-size: cover;
-    width: 100vw;
-    height: 30vh;
-    background-image: url(https://images.pexels.com/photos/66143/pexels-photo-66143.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1); 
-  }
-  .about h2,.about p{
+    .about p{
     font-size: 50%;
-    color: #2099d8;
-    width: 100%;
+    color: #f8efd9; 
+    width: 95%;
   }
-  .about h2,.about p, .about button{
-    margin: 1% 3%;
-  }
+  
 }

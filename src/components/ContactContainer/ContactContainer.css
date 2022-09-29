@@ -3,24 +3,53 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+.contact-container .contact{
   height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
 
-.contact-container h2, .contact-container form {
-  color: #f8efd9;
-  font-size: 30px;
-  width: 40%;
+.contact-container .contact h2{
+  margin: 5% 0 0 5%;
+}
+.contact-container .contact form{
   margin: 3% 0 0 5%;
 }
 
-
-.contact-container form {
-  display: flex;
-  flex-direction: column;
-
+.contact-container .contact h2, contact-container .contact form {
+  color: #f8efd9;
+  font-size: 30px;
+  width: 40%;
 }
 
-/*-----------------------*/
+
+.contact-container .contact form {
+  display: flex;
+  flex-direction: column;
+}
+.contact-container .contact form textarea{
+  resize: none;
+  height: 130px;
+}
+
+@media screen and (max-width: 768px) {
+  .contact-container .contact form textarea{
+    height: 150px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .contact-container .contact h2, contact-container .contact form {
+    font-size: 25px;
+    width: 50%;
+  }
+  .contact-container .contact form {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact-container .contact form textarea{
+    height: 130px;
+  }
+}

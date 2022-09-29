@@ -1,5 +1,6 @@
 import React,{useState} from 'react';
 import ButtonArrow from '../ButtonArrow/ButtonArrow';
+import NavBar from '../NavBar/NavBar';
 import './ContactContainer.css';
 
 const initialState ={
@@ -37,7 +38,9 @@ function ContactContainer() {
     }
 
   return (
-        <div className='contact-container'>
+      <div className='contact-container'>
+        <NavBar/>
+        <div className='contact'>
             <h2>Contact us!</h2>
             <form
           onSubmit={handlerSubmit}
@@ -72,6 +75,8 @@ function ContactContainer() {
           <ButtonArrow content="Send Message"/>
             </form> 
         </div>
+      </div>
+        
   )
 }
 

@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import GetTicketHandler from './GetTicketHandler/GetTicketHandler';
 import Spinner from '../Spinner/Spinner';
 import './CoasterDetailContainer.css';
+import NavBar from '../NavBar/NavBar';
 
 
 
@@ -27,6 +28,7 @@ function CoasterDetailContainer() {
 
   return (
     <React.Fragment>
+      <NavBar/>
       {loading && <Spinner/>}
       {!loading && 
         <div className='card-detail'>

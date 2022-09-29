@@ -1,5 +1,6 @@
 import React, { useContext } from 'react'
 import { TicketsContext } from '../../context/TicketsContext'
+import NavBar from '../NavBar/NavBar';
 import CartForm from './CartForm/CartForm';
 import './TicketsCartContainer.css';
 
@@ -9,6 +10,8 @@ function TicketsCartContainer() {
 
   return (
     <div className='cart-container'>
+      <NavBar/>
+    <div className='cart-title'>
         <h2>Cart</h2>
         <div className='cart'>
           <button onClick={cleanCart} className='clean-list-btn'>Clean list</button>
@@ -56,6 +59,8 @@ function TicketsCartContainer() {
         </div>
         <CartForm/>
     </div>
+    </div>
+    
   )
 }
 
