@@ -3,6 +3,7 @@ import { useState } from 'react'
 import NavBar from '../NavBar/NavBar'
 import Spinner from '../Spinner/Spinner'
 import CardsContainer from './CardsContainer/CardsContainer'
+import './Home.css'
 
 
 
@@ -25,19 +26,20 @@ useEffect(() => {
 
 
   return (
-    <React.Fragment>
+    <div className='attractions'>
       <NavBar/> 
       {loading && <Spinner/> }
       {
         !loading && 
         <>
-          <h2>Home</h2>
+          <h2>Attrations</h2>
+          
           <CardsContainer coasters={coasters}/>
         </>
       }
       
 
-    </React.Fragment>
+    </div>
     
   )
 }

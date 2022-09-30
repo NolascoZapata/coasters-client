@@ -44,7 +44,7 @@ function CartForm() {
 
   return (
     <>
-    <h3>Enter your data</h3>
+    <h3>Where do we send your tickets?</h3>
     <form 
                 onSubmit={handlerSubmit}
                 onChange={handlerChange}

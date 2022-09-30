@@ -10,44 +10,44 @@
 .cart-title{
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
 }
-.cart-title .cart {
-  top: 10%;
-  left: 10%;
-}
+
 
 .cart-title .cart table {
   border-collapse: collapse;
   margin: 25px 0;
-  min-width: 400px;
+  background-color: #2927275a;
+  width: 70%;
 
+}
+.cart-title .cart table .empty-cart {
+  color: rgb(255, 0, 0);
+  font-weight: 500;
 }
 
 .cart-title .cart table thead tr {
   color: #f8efd9;
   text-align: left;
+  border-bottom: 2px solid #f8efd960;
 }
 
 .cart-title .cart table th,
 .cart-title .cart table td {
-  padding: 12px 15px;
+  padding: 12px 10px;
+  font-size: 15px;
 }
-
-.cart-title .cart table tbody tr {
-  border-bottom: 1px solid #f8efd9;
-}
-
-
 
 .cart-title .cart table tbody tr:last-of-type {
-  border-bottom: 2px solid #f8efd9;
+  border-bottom: 2px solid #f8efd960;
 }
-
+.cart-title .cart table tfoot {
+  font-weight: 600;
+  color: #f8efd9;
+}
 
 .cart-title .clean-list-btn {
   cursor: pointer;
-  font-weight: 700;
+  font-weight: 800;
   transition: all .2s;
   padding: 2px 6px;
   border-radius: 100px;
@@ -62,4 +62,36 @@
 
 .cart-title .clean-list-btn:active {
   transform: scale(0.95);
+}
+
+
+@media screen and (max-width: 768px) {
+  .cart-title h2{
+    font-size: 80%;
+  }
+  .cart-title .cart table {
+    width: 600px;
+  
+  }
+}
+@media screen and (max-width: 576px) {
+  
+  .cart-title .cart table {
+    width: 100%
+  
+  }
+  .cart-title .cart table th,
+  .cart-title .cart table td {
+    padding: 6px 7px;
+    font-size: 11px;
+  }
+
+  .cart-title .cart table tbody tr:last-of-type {
+    border-bottom: 2px solid #f8efd960;
+  }
+  .cart-title .cart table tfoot {
+    font-weight: 600;
+    color: #f8efd9;
+  }
+  
 }

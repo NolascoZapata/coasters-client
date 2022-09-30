@@ -29,7 +29,7 @@ function TicketsCartContainer() {
             {cartLenght === 0 ?
             <tbody>
               <tr>
-                <td colSpan="5" style={{"color":"red"}} >Empty Cart</td>
+                <td colSpan="5" align='center' className="empty-cart">Empty Cart</td>
               </tr>
             </tbody>
             
@@ -42,7 +42,7 @@ function TicketsCartContainer() {
                     <td align="center">{i.date} Turn: {i.turn}</td>
                     <td align="center">{i.itemQty}</td>
                     <td align="center">${i.itemQty*i.item.price}</td>
-                    <td align="center" onClick={()=>removeTickets(i)}>🗑</td>
+                    <td align="center" onClick={()=>removeTickets(i)}>{'\u2715'}</td>
                   </tr>
                   )
 
