@@ -1,0 +1,21 @@
+.footer{
+  width:100%;
+  background-color: #292727fa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+.footer .footer-social-media a {
+  margin: 0 10px;
+  color: #f8efd9;
+}
+.footer .footer-social-media a:hover{
+  margin: 0 10px;
+  color: #f8efd9b1;
+}
+
+.footer .footer-copyright{
+  color: #f8efd9;
+  font-size: 15px;
+}

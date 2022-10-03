@@ -1,9 +1,9 @@
-import React, { useEffect } from 'react'
-import { useState } from 'react'
-import NavBar from '../NavBar/NavBar'
-import Spinner from '../Spinner/Spinner'
-import CardsContainer from './CardsContainer/CardsContainer'
-import './Home.css'
+import React, { useEffect } from 'react';
+import { useState } from 'react';
+import NavBar from '../NavBar/NavBar';
+import Spinner from '../Spinner/Spinner';
+import CardsContainer from './CardsContainer/CardsContainer';
+import './Home.css';
 
 
 
@@ -32,13 +32,10 @@ useEffect(() => {
       {
         !loading && 
         <>
-          <h2>Attrations</h2>
-          
+          <h2>Attractions</h2>
           <CardsContainer coasters={coasters}/>
         </>
       }
-      
-
     </div>
     
   )

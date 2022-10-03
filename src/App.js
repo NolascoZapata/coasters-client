@@ -1,12 +1,12 @@
 import './App.css';
 import {BrowserRouter as Router, Route, Routes } from 'react-router-dom'
-
 import ContactContainer from './components/ContactContainer/ContactContainer'
 import Home from './components/Home/Home';
 import AboutUs from './components/AboutUs/AboutUs';
 import TicketsCartContainer from './components/TicketsCartContainer/TicketsCartContainer';
 import CoasterDetailContainer from './components/CoasterDetailContainer/CoasterDetailContainer';
 import UseTicketsContext from './context/TicketsContext';
+import Footer from './components/Footer/Footer';
 
 
 function App() {
@@ -22,6 +22,7 @@ function App() {
             <Route exact path='/contact' element={<ContactContainer/>}/>
             <Route exact path='/about' element={<AboutUs/>}/>
           </Routes>
+          <Footer/>
         </div>
         </UseTicketsContext>
     </Router>

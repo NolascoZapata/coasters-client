@@ -1,0 +1,7 @@
+.ticketDateTurn {
+  margin-top: 10px;
+}
+.ticketDateTurn label, .ticket-date-turn input{
+  margin: 0px 10px;
+  
+}

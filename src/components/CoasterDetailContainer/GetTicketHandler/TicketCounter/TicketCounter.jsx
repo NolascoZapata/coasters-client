@@ -37,17 +37,20 @@ function TicketCounter(props) {
   }
 
   return (
-    <div className='ticket-couter'>
-      
+    <div className='ticket-counter'>
 
 
       {
       onAddTo?
       <React.Fragment>
-        <p>Tickets: </p>
-        <button onClick={downQty} className='btn'>-</button>
-        <label>{quantity}</label>
-        <button onClick={upQty} className='btn'>+</button>
+        
+        <div>
+          <span>Tickets:</span>
+          <button onClick={downQty} className='btn'>-</button>
+          <label>{quantity}</label>
+          <button onClick={upQty} className='btn'>+</button>
+        </div>
+        
         <p>Subtotal : ${quantity*selectedCoaster.price}</p>
 
         <button type="button" className='btn' onClick={()=> { checkDate(date,turn)}}>

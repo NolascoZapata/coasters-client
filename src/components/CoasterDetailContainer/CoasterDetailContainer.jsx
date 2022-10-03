@@ -2,8 +2,8 @@ import React,{ useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import GetTicketHandler from './GetTicketHandler/GetTicketHandler';
 import Spinner from '../Spinner/Spinner';
-import './CoasterDetailContainer.css';
 import NavBar from '../NavBar/NavBar';
+import './CoasterDetailContainer.css';
 
 
 
@@ -27,7 +27,7 @@ function CoasterDetailContainer() {
 },[id])
 
   return (
-    <React.Fragment>
+    <div className='coaster-deatil-container'>
       <NavBar/>
       {loading && <Spinner/>}
       {!loading && 
@@ -55,8 +55,9 @@ function CoasterDetailContainer() {
             <GetTicketHandler selectedCoaster={selectedCoaster}/>
           </div>
         </div>
-      }
-    </React.Fragment>
+      }      
+    </div>
+    
   )
 }
 

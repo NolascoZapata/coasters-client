@@ -1,6 +1,7 @@
 import React, {useContext, useState} from 'react';
 
 import { TicketsContext } from './../../../context/TicketsContext';
+import './CartForm.css'
 
 
 const initialState ={
@@ -43,33 +44,33 @@ function CartForm() {
   }
 
   return (
-    <>
-    <h3>Where do we send your tickets?</h3>
-    <form 
-                onSubmit={handlerSubmit}
-                onChange={handlerChange}
-            >
-                <input
-                    className='text-input'
-                    type='text'
-                    placeholder='Name' 
-                    name='name'
-                    defaultValue={buyer.name}
-                    required
-                />
-                <input
-                    className='text-input'
-                    type='email' 
-                    placeholder='E-mail' 
-                    name='email'
-                    defaultValue={buyer.email}
-                    required
-                />
-                <button className='btn'>Buy now!</button>
-                
-                
-            </form>
-</>
+    <div className='cart-form' >
+      <h3>Where do we send your tickets?</h3>
+      <form 
+                  onSubmit={handlerSubmit}
+                  onChange={handlerChange}
+              >
+                  <input
+                      className='text-input'
+                      type='text'
+                      placeholder='Name' 
+                      name='name'
+                      defaultValue={buyer.name}
+                      required
+                  />
+                  <input
+                      className='text-input'
+                      type='email' 
+                      placeholder='E-mail' 
+                      name='email'
+                      defaultValue={buyer.email}
+                      required
+                  />
+                  <button className='btn'>Buy now!</button>
+                  
+                  
+      </form>
+    </div>
   )
 }
 

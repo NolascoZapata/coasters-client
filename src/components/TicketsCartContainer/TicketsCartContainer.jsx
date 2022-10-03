@@ -12,9 +12,8 @@ function TicketsCartContainer() {
     <div className='cart-container'>
       <NavBar/>
     <div className='cart-title'>
-        <h2>Cart</h2>
+        <h2>Your Cart</h2>
         <div className='cart'>
-          <button onClick={cleanCart} className='clean-list-btn'>Clean list</button>
           <table  cellPadding="10" cellSpacing="0">
             <thead>
               <tr>
@@ -45,7 +44,6 @@ function TicketsCartContainer() {
                     <td align="center" onClick={()=>removeTickets(i)}>{'\u2715'}</td>
                   </tr>
                   )
-
               }
             </tbody>
             }
@@ -56,8 +54,11 @@ function TicketsCartContainer() {
               </tr>
             </tfoot>
           </table>
+          <button onClick={cleanCart} className='clean-list-btn'>Clean list</button>
+
         </div>
         <CartForm/>
+        
     </div>
     </div>
     

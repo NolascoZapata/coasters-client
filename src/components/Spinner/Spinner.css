@@ -10,7 +10,7 @@
   font-size: 20px;
 }
 .spinner-container .spinner {
-  --clr: rgb(0, 113, 128);
+  --clr: #292727fa;
   --gap: 6px;
   /* gap between each circle */
   width: 100px;

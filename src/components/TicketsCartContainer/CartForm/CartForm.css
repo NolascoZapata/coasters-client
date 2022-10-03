@@ -1,0 +1,20 @@
+.cart-form{
+  color: #29272783;
+}
+.cart-form form{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 0 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .cart-form h3{
+    font-size: 60%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .cart-form form{
+    width: 60%;
+  }
+}
