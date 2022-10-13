@@ -1,9 +1,9 @@
 .coaster-deatil-container {
-  background-image: url(https://d.newsweek.com/en/full/2037106/mans-resting-coaster-face-has-internet-laughing.jpg);
+  /* background-image: url(https://d.newsweek.com/en/full/2037106/mans-resting-coaster-face-has-internet-laughing.jpg);
   background-repeat: no-repeat; 
-  background-position: center;
+  background-position: center; */
   background-size: cover;
-  height: 100vh;
+  /* height: 100vh; */
   color: #f8efd9;
 }
 
@@ -17,6 +17,7 @@
 .card-detail img{
   width: 50%;
   height: 50%;
+  border-radius: 7px;
 }
 .card-detail img, .card-detail .details{
   margin: 1%;

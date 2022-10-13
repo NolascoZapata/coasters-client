@@ -9,7 +9,7 @@
 
 
 .navbar .navbar-a{
-  color: #F0F7F4;
+  color: #f8efd9;
   text-decoration: none;
 }
 .navbar .navbar-button{
@@ -23,7 +23,6 @@
 
 .navbar .navbar-ul{
   display: flex;
-
   justify-content: space-between;
   list-style: none;
 }
@@ -44,6 +43,10 @@
 
   .navbar .navbar-button{
       display: flex;
+      color: #2927277d;
+      background-color: #f8efd9;
+      border: none;
+      border-radius: 3px;
   }
   .navbar .navbar-nav{
       width:100%;
