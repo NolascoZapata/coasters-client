@@ -15,7 +15,7 @@ const [loading, setLoading] = useState(true)
 useEffect(() => {
   setLoading(true)
   const axios = require('axios')
-  axios.get('https://coasters-service.onrender.com/api/coasters')
+  axios.get(`${process.env.API_URL}/api/coasters`)
   .then(res=> setCoasters(res.data))
   .catch(error=>console.log(error))
   .finally(() => {

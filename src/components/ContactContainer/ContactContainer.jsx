@@ -28,7 +28,7 @@ function ContactContainer() {
     const handlerSubmit=(evt)=>{
       evt.preventDefault()
       const axios = require('axios')
-      axios.post('https://coasters-service.onrender.com/api/messages', message)
+      axios.post(`${process.env.API_URL}/api/messages`, message)
           .then(res=>res)
           .catch(error=> console.log(error))
           .then(res=>alert(`Message sent!,  we will reply as soon as possible. MessageId is ${res.data}`))
