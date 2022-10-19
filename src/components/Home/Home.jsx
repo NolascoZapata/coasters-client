@@ -15,7 +15,7 @@ const [loading, setLoading] = useState(true)
 useEffect(() => {
   setLoading(true)
   const axios = require('axios')
-  axios.get(`${process.env.API_URL}/api/coasters`)
+  axios.get(`${process.env.REACT_APP_API_URL}/api/coasters`)
   .then(res=> setCoasters(res.data))
   .catch(error=>console.log(error))
   .finally(() => {
@@ -23,7 +23,7 @@ useEffect(() => {
   })
 }, [])
 
-
+console.log(process.env.REACT_APP_API_URL);
 
   return (
     <div className='attractions'>

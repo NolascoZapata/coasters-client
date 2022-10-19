@@ -18,7 +18,7 @@ function CoasterDetailContainer() {
   useEffect(()=>{
     setLoading(true)
       const axios = require('axios')
-      axios.get(`${process.env.API_URL}/api/coasters/${id}`)
+      axios.get(`${process.env.REACT_APP_API_URL}/api/coasters/${id}`)
         .then(res=>res.data)
         .then(data=> setSelectedCoaster(data))
         .finally(() => {

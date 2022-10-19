@@ -31,7 +31,7 @@ function CartForm() {
 
     } else {
       const axios = require('axios')
-      axios.post(`${process.env.API_URL}/api/orders`, order)
+      axios.post(`${process.env.REACT_APP_API_URL}/api/orders`, order)
           .then(res=>res)
           .catch(error=> console.log(error))
           .then(res=>alert(`Reserved tickets!, your tracking code is ${res.data}`))
